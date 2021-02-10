@@ -4,8 +4,8 @@ const jwt = require('jsonwebtoken');
 const Usuario = require('../models/usuario');
 const app = express();
 
-const { OAuth2Client } = require('google-auth-library');
-const client = new OAuth2Client(process.env.CLIENT_ID);
+//const { OAuth2Client } = require('google-auth-library');
+//const client = new OAuth2Client(process.env.CLIENT_ID);
 
 app.post('/login', (req, res) => {
    let body = req.body;
@@ -53,7 +53,7 @@ app.post('/login', (req, res) => {
 });
 
 // Configuraciones de google
-async function verify(token) {
+/*async function verify(token) {
    const ticket = await client.verifyIdToken({
       idToken: token,
       audience: process.env.CLIENT_ID,
@@ -143,6 +143,6 @@ app.post('/google', async (req, res) => {
          });
       }
    });
-});
+});*/
 
 module.exports = app;

@@ -1,9 +1,25 @@
-# REST Server en Node
+# REST API en Node
+
+## Construido con
 
 -  Node
 -  Express
 -  MongoDB
+-  JWT
+-  Express-fileupload
 
-### Instalación
+## Variables de entorno usadas
 
-_npm install_
+-  PORT=8080
+-  SEED=seed-de-desarrollo
+-  CADUCIDAD_TOKEN=48h
+-  URLMONGO=
+   url de la base de datos en mongo atlas o en local
+
+## Instalación
+
+### `npm install`
+
+## Correr en desarrollo
+
+### `npm run dev`
