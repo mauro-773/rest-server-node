@@ -19,6 +19,4 @@ app.use(require('./routes/index'));
 // Connection to the database
 connectDB();
 
-app.listen(process.env.PORT, () => {
-   console.log('PORT 4000');
-});
+app.listen(process.env.PORT, () => console.log('PORT 4000'));
